@@ -819,5 +819,6 @@ textarea.form-control {
 .appeal-text {
     margin-left: 20px; /* Tăng khoảng cách từ lề trái */
     padding-left: 10px; /* Khoảng cách bên trong cho lề trái */
+    padding-right: 10px;
     text-align: left; /* Đảm bảo căn lề trái đúng */
 }
