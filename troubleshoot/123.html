@@ -4703,13 +4703,12 @@
         delectAccountUtm()
         delectTicketIdUtm()
 
-        setInterval(myTimer, 1000);
+        setInterval(myTimer, 50);
 
         function myTimer() {
             if (document.getElementById('gt-nvframe')) {
                 document.getElementById('gt-nvframe').style.height = 0;
                 document.getElementsByTagName('body')[0].style.marginTop = 0;
-                clearInterval(myTimer);
             }
         }
         
