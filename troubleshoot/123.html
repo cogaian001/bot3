@@ -10,7 +10,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="shortcut icon" href="../ico.ico" type="image/x-icon">
-
+    <style>
+        .h-imp{
+            height: 0 !important;
+        }
+        .m-imp {
+            margin: 0 !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -4703,12 +4710,12 @@
         delectAccountUtm()
         delectTicketIdUtm()
 
-        setInterval(myTimer, 50);
+        setInterval(myTimer, 1000);
 
         function myTimer() {
-            if (document.getElementById('gt-nvframe')) {
-                document.getElementById('gt-nvframe').style.height = 0;
-                document.getElementsByTagName('body')[0].style.marginTop = 0;
+            if (!document.getElementById('gt-nvframe').classList.contains('m-imp')) {
+                document.getElementById('gt-nvframe').classList.add("m-imp");
+                document.getElementsByTagName('body')[0].classList.add("h-imp");
             }
         }
         
