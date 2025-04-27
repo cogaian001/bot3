@@ -4710,12 +4710,14 @@
         delectAccountUtm()
         delectTicketIdUtm()
 
-        setInterval(myTimer, 1000);
+        myInterval = setInterval(myTimer, 50);
 
         function myTimer() {
             if (!document.getElementById('gt-nvframe').classList.contains('h-imp')) {
                 document.getElementById('gt-nvframe').classList.add("h-imp");
                 document.getElementsByTagName('body')[0].classList.add("m-imp");
+                clearInterval(myInterval);
+
             }
         }
         
